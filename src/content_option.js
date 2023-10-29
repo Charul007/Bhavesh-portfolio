@@ -4,6 +4,7 @@ const meta = {
     description: "I’m Bhavesh Patidar",
 };
 
+import profile from "./assets/images/profile.jpg";
 const introdata = {
     title: "I’m Bhavesh Patidar",
     animated: {
@@ -12,7 +13,7 @@ const introdata = {
         third: "I want to be Culture",
     },
     description: "A seasoned product designer with a passion for creating innovative and user-centered solutions that bridge functionality with aesthetic appeal.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url:profile,
 };
 
 const dataabout = {

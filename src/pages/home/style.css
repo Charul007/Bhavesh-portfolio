@@ -96,6 +96,7 @@ section {
     background-position: center;
     min-height: 700px;
     position: relative;
+    width: 500px;
 }
 
 .ac_btn {
