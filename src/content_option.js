@@ -125,7 +125,7 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: " Bhaveshpatidar@gmail.com ",
+    YOUR_EMAIL: " bhaveshpatidar336@gmail.com ",
     YOUR_FONE: "+91-7225088017",
     description:"If you have any design-related queries or seek to discuss product design strategies, please feel free to contact me. I'm here to assist you in crafting innovative and user-centric solutions.",
     // creat an emailjs.com account 
