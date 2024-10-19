@@ -3,10 +3,18 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
 export const Portfolio = () => {
+
+  const navigate = useNavigate();
+  
+  const handleNavigation = (data) => () => {
+    navigate('/Details', { state: { data } });
+  };
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -25,10 +33,10 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img src={data.img} alt="" loading="lazy" />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <button onClick={handleNavigation(data)}>View Project</button>
                 </div>
               </div>
             );
